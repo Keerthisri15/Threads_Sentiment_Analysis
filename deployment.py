@@ -23,7 +23,7 @@ with open("svm_model.pkl", "rb") as file:
 with open("tfidf_vectorizer.pkl", "rb") as file:
     vectorizer = pickle.load(file)
 
-"""Here we have to again perform cleaning because user may give any type of data."""
+#Here we have to again perform cleaning because user may give any type of data.
 
 nltk.download('stopwords')
 stopwords = nltk.corpus.stopwords.words('english')
